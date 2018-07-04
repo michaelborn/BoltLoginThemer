@@ -2,7 +2,7 @@
 
 Show a little [Unsplash][1] goodness on your login screen in [Bolt CMS][2].
 
-[!Bolt login screen with vibrant purple ocean background](/bolt-login-unsplash-background.jpg)
+![Bolt login screen with vibrant purple ocean background](/bolt-login-unsplash-background.jpg)
 
 ## Setup
 
