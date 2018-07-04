@@ -1,0 +1,27 @@
+# What resource should we get the photo from?
+# Possible values are collection,user, or featured
+resource: collection
+
+# How do we identify the collection, photo, etc?
+# This could be a photo ID or a collection ID.
+parameter: 1922729
+
+# Size: What should should we load this photo at?
+# Smaller is faster, but lower quality.
+# For a decent match between speed and quality,
+# set the size low and the blur high.
+size: 1200x700
+
+# Blur: Add a blur effect to the background image.
+# Higher is more. Lower than zero is ignored.
+blur: 5
+
+# Saturation: Increase or decrease image saturation.
+# Lower this number to decrease saturation.
+# Raise this number to increase saturation.
+# 0 for no color, 1 for full color.
+saturate: 0
+
+# Brightness: increase or decrease the image brightness.
+# 100 is no change.
+brightness: 105
