@@ -2,6 +2,8 @@
 
 Show a little [Unsplash][1] goodness on your login screen in [Bolt CMS][2].
 
+[!Bolt login screen with vibrant purple ocean background](/bolt-login-unsplash-background.jpg)
+
 ## Setup
 
 Bear with me! This extension hasn't really been tested all that much. This was initially developed as a bundle, so I'm not sure how the config stuff works yet.
