@@ -1,0 +1,5 @@
+# ignore editors and junk
+.DS_Store
+*.swp
+*.swo
+.vscode
