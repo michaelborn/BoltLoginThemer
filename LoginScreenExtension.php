@@ -24,20 +24,23 @@ class LoginScreenExtension extends SimpleExtension
                 ->setCallback([$this, 'printWallpaperSnippet'])
                 ->setZone(Zone::BACKEND)
                 ->setLocation(Target::AFTER_META);
+
     return [
       $snippet
     ];
   }
 
   public function printWallpaperSnippet() {
+    $config = $this->getConfig();
+
     return '<style>
     body.login {
       position: relative;
     }
     body.login::after {
-      background: url("https://source.unsplash.com/collection/1922729/1200x700") no-repeat center center /cover;
+      background: url("https://source.unsplash.com/' . $config["type"] . '/' . $config["parameter"] . '/' . $config["size"] . '") no-repeat center center /cover;
       content: "";
-      filter: brightness(105%) saturate(0) blur(5px);
+      filter: brightness(' . $config["brightness"] . '%) saturate(' . $config["saturate"] . ') blur(' . $config["blur"] . 'px);
       
       position: absolute;
       z-index: -1;
@@ -47,5 +50,19 @@ class LoginScreenExtension extends SimpleExtension
       right: 0;
     }  
     </style>';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getDefaultConfig() {
+    return [
+      'type' => 'collection',
+      'parameter'     => '1922729',
+      'size'          => '1200x700',
+      'blur'          => 5,
+      'saturate'      => 0,
+      'brightness'    => '105'
+    ];
   }
 }
