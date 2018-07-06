@@ -43,19 +43,8 @@ class LoginScreenExtension extends SimpleExtension
 
     return '<style>
     body.login {
-      position: relative;
-    }
-    body.login::after {
       background: url("' . $config["image_url"] . '") no-repeat center center /cover;
-      content: "";
-      
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }  
+    }
     </style>';
   }
 
@@ -64,7 +53,7 @@ class LoginScreenExtension extends SimpleExtension
    */
   protected function getDefaultConfig() {
     return [
-      'image_url'    => 'https://source.unsplash.com/plJyhN8LdWo/1600x900',
+      'image_url'  => 'https://source.unsplash.com/plJyhN8LdWo/1600x900',
       'css_url'    => ''
     ];
   }
