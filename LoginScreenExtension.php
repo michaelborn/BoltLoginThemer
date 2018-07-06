@@ -4,6 +4,7 @@ namespace Bundle\loginScreen;
 
 use Bolt\Extension\SimpleExtension;
 use Bolt\Asset\Snippet\Snippet;
+use Bolt\Asset\File\Stylesheet;
 use Bolt\Controller\Zone;
 use Bolt\Asset\Target;
 
@@ -20,14 +21,21 @@ class LoginScreenExtension extends SimpleExtension
    * {@inheritdoc}
    */
   protected function registerAssets() {
-    $snippet = Snippet::Create()
-                ->setCallback([$this, 'printWallpaperSnippet'])
-                ->setZone(Zone::BACKEND)
-                ->setLocation(Target::AFTER_META);
+    $config = $this->getConfig();
 
-    return [
-      $snippet
-    ];
+    if ( $config["css_url"] ) {
+      $asset = Stylesheet::Create()
+                  ->setPath($config["css_url"])
+                  ->setZone(Zone::BACKEND)
+                  ->setLocation(Target::AFTER_META);
+    } else {
+      $asset = Snippet::Create()
+                  ->setCallback([$this, 'printWallpaperSnippet'])
+                  ->setZone(Zone::BACKEND)
+                  ->setLocation(Target::AFTER_META);
+
+    }
+    return [ $asset ];
   }
 
   public function printWallpaperSnippet() {

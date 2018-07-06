@@ -1,6 +1,6 @@
 # CSS File
 # Un-comment this to use a custom CSS stylesheet for the login page.
-# css_url: /public/theme/myTheme/css/login-theme.css
+# css_url: /theme/myTheme/css/login-theme.css
 #
 # Image URL
 #   You can reference a local file (stored in your theme, for example) like so:
