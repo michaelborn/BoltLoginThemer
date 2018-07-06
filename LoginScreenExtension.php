@@ -38,9 +38,8 @@ class LoginScreenExtension extends SimpleExtension
       position: relative;
     }
     body.login::after {
-      background: url("https://source.unsplash.com/' . $config["resource"] . '/' . $config["parameter"] . '/' . $config["size"] . '") no-repeat center center /cover;
+      background: url("' . $config["image_url"] . '") no-repeat center center /cover;
       content: "";
-      filter: brightness(' . $config["brightness"] . '%) saturate(' . $config["saturate"] . ') blur(' . $config["blur"] . 'px);
       
       position: absolute;
       z-index: -1;
@@ -57,12 +56,8 @@ class LoginScreenExtension extends SimpleExtension
    */
   protected function getDefaultConfig() {
     return [
-      'resource'      => 'collection',
-      'parameter'     => '1922729',
-      'size'          => '1200x700',
-      'blur'          => 5,
-      'saturate'      => 0,
-      'brightness'    => '105'
+      'image_url'    => 'https://source.unsplash.com/plJyhN8LdWo/1600x900',
+      'css_url'    => ''
     ];
   }
 }

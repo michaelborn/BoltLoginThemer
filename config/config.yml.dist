@@ -1,27 +1,23 @@
-# What resource should we get the photo from?
-# Possible values are collection,user, or featured
-resource: collection
-
-# How do we identify the collection, photo, etc?
-# This could be a photo ID or a collection ID.
-parameter: 1922729
-
-# Size: What should should we load this photo at?
-# Smaller is faster, but lower quality.
-# For a decent match between speed and quality,
-# set the size low and the blur high.
-size: 1200x700
-
-# Blur: Add a blur effect to the background image.
-# Higher is more. Lower than zero is ignored.
-blur: 5
-
-# Saturation: Increase or decrease image saturation.
-# Lower this number to decrease saturation.
-# Raise this number to increase saturation.
-# 0 for no color, 1 for full color.
-saturate: 0
-
-# Brightness: increase or decrease the image brightness.
-# 100 is no change.
-brightness: 105
+# CSS File
+# Un-comment this to use a custom CSS stylesheet for the login page.
+# css_url: /public/theme/myTheme/css/login-theme.css
+#
+# Image URL
+#   You can reference a local file (stored in your theme, for example) like so:
+#   image_url: /public/theme/myTheme/assets/images/login-background.jpg
+#
+# OR
+#   reference a file somewhere out on the Internet.
+#   (I recommend Unsplash, but that's just me.)
+#
+#   Use the source.unsplash.com API to pull a random image
+#   or a weekly image by search term, etc.
+#
+#   Random featured image with tag "nature" and size 1600x900
+#   image_url: https://source.unsplash.com/featured/1600x900/?nature
+#
+#   Random 1200x700 image from Peter Broomfield's "Vibrant/Colorful" collection
+#   image_url: https://source.unsplash.com/collection/1140715/1200x700
+# 
+#   Default: A super-cool single woodsy photo from Unsplash.
+image_url: https://source.unsplash.com/plJyhN8LdWo/1600x900
