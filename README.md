@@ -1,6 +1,6 @@
-# Bolt Login Wallpapers
+# Bolt Login Themer
 
-Show a little [Unsplash][1] goodness on your login screen in [Bolt CMS][2].
+Redesign the [Bolt CMS][1] login page with a custom CSS file or image ([Unsplash!][2]) background.
 
 ![Bolt login screen with vibrant purple ocean background](/bolt-login-unsplash-background.jpg)
 
@@ -18,12 +18,13 @@ Thanks! Good luck!
 ## TODO
 
 * Switch from a `Bundle` to a `SimpleExtension`, whatever the difference is.
-* Allow `daily` or `weekly` API endpoints so the images will load much faster. (Cached for a week, ya?)
+* Instead of all the Unsplash options, allow a simple [source.unsplash.com][3] image URL.
+* Add a settings page with an image uploader and CSS file.
 
 ## Thanks To
 
 The [Unsplash Source API][3]. Obviously, this extension ain't much good without Unsplash behind it.
 
-[1]: https://unsplash.com/
-[2]: https://bolt.cm/
+[1]: https://bolt.cm/
+[2]: https://unsplash.com/
 [3]: https://source.unsplash.com/
