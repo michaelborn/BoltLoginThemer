@@ -1,0 +1,12 @@
+.login {
+  background: url('https://source.unsplash.com/031Squ03RLk/1600x900') no-repeat center center /cover;
+}
+.login .view-site {
+  color: #fff;
+}
+.login .view-site a {
+  color: inherit;
+}
+.login .quote {
+  display: none;
+}
