@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\loginScreen;
+namespace Bolt\Extension\Bolt\LoginThemer;
 
 use Bolt\Extension\SimpleExtension;
 use Bolt\Asset\Snippet\Snippet;
@@ -15,7 +15,7 @@ use Bolt\Asset\Target;
  * and displaying them as the login background.
  *
  */
-class LoginScreenExtension extends SimpleExtension
+class LoginThemerExtension extends SimpleExtension
 {
   /**
    * {@inheritdoc}

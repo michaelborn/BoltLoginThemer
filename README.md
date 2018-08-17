@@ -6,24 +6,23 @@ Redesign the [Bolt CMS][1] login page with a custom CSS file or image ([Unsplash
 
 ## Setup
 
-Bear with me! This extension hasn't really been tested all that much. This was initially developed as a bundle, so I'm not sure how the config stuff works yet.
-
-1. Clone the extension to your `src/` directory.
-1. Update your site root `.bolt.yml` or `composer.json` to reference the `loginScreenExtension` bundle. `Bundle\loginScreen\LoginScreenExtension`
-1. Add some config, for now just by copying `config/config.yml.dist` to `app/config/extensions/loginscreen.bundle.yml`
-1. Visit `/bolt/login`. You should see a background image load in from Unsplash.
-
-Thanks! Good luck!
+1. Install extension.
+1. Update the `image_url` or `css_url` in config to theme your login how you like it.
+1. Enjoy!
 
 ## TODO
 
-* Switch from a `Bundle` to a `SimpleExtension`, whatever the difference is.
-* Instead of all the Unsplash options, allow a simple [source.unsplash.com][3] image URL.
 * Add a settings page with an image uploader and CSS file.
+* ADD `phpunit` tests?
+
+## Changelog
+
+* v0.1.0 - Bundle only, very simple login wallpaper via Unsplash.
+* v0.2.0 - Switched to Bolt Extension, use image URL or CSS url instead of Unsplash.
 
 ## Thanks To
 
-The [Unsplash Source API][3]. Obviously, this extension ain't much good without Unsplash behind it.
+The [Unsplash Source API][3], used for the default background image.
 
 [1]: https://bolt.cm/
 [2]: https://unsplash.com/
