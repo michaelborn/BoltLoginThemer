@@ -1,6 +1,6 @@
 <?php
 
-namespace Bolt\Extension\Bolt\LoginThemer;
+namespace Bolt\Extension\Mborn319\LoginThemer;
 
 use Bolt\Extension\SimpleExtension;
 use Bolt\Asset\Snippet\Snippet;

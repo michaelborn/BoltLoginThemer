@@ -1,9 +1,9 @@
 {
-    "name": "bolt/loginThemer",
+    "name": "mborn319/loginThemer",
     "description": "Add a custom design to the Bolt login page",
     "type": "bolt-extension",
     "keywords": ["login", "admin", "theme"],
-    "version": "0.2.0",
+    "version": "0.2.32",
     "require": {
         "bolt/bolt": "^3.5"
     },
@@ -17,11 +17,11 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Bolt\\Extension\\Bolt\\LoginThemer\\": "src"
+            "Bolt\\Extension\\Mborn319\\LoginThemer\\": "src"
         }
     },
     "extra": {
         "bolt-assets": "web",
-        "bolt-class": "Bolt\\Extension\\Bolt\\LoginThemer\\LoginThemerExtension"
+        "bolt-class": "Bolt\\Extension\\Mborn319\\LoginThemer\\LoginThemerExtension"
     }
 }
