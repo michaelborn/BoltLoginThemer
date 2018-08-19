@@ -22,6 +22,10 @@
     },
     "extra": {
         "bolt-assets": "web",
-        "bolt-class": "Bolt\\Extension\\Mborn319\\LoginThemer\\LoginThemerExtension"
+        "bolt-class": "Bolt\\Extension\\Mborn319\\LoginThemer\\LoginThemerExtension",
+        "bolt-screenshots": [
+            "assets/bolt-login-themer-teaser.png",
+            "assets/bolt-login-themer-fullscreen.png"
+        ]
     }
 }
