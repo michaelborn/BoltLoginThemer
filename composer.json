@@ -24,8 +24,8 @@
         "bolt-assets": "web",
         "bolt-class": "Bolt\\Extension\\Mborn319\\LoginThemer\\LoginThemerExtension",
         "bolt-screenshots": [
-            "assets/bolt-login-themer-teaser.jpg",
-            "assets/bolt-login-themer-fullscreen.jpg"
+            "https://bitbucket.org/mborn319/loginthemer/raw/e3ac760181440b4a70fc219d9db81cd8ac0b0397/assets/bolt-login-themer-teaser.jpg",
+            "https://bitbucket.org/mborn319/loginthemer/raw/e3ac760181440b4a70fc219d9db81cd8ac0b0397/assets/bolt-login-themer-fullscreen.jpg"
         ]
     }
 }
