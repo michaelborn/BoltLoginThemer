@@ -4,14 +4,50 @@ Looking for a little more splash on your [Bolt][1] login screen? This extension 
 
 ![Bolt login screen with ocean background](/assets/bolt-login-themer-fullscreen.jpg)
 
-For generic background images, we recommend using the [Unsplash API][3] to easily embed static images or even choose a random image from a [collection][4] or [search term.][5]
-
 ## Setup
 
 1. Install extension.
-1. Update the `image_url` in the extension config file to set your own background image.
-1. Optional: update the `css_url` file path to embed a CSS file on the login screen for hardcore login designs.
-1. Enjoy!
+1. Visit `/bolt/login`. You should see an Unsplash background image.
+
+## Config
+
+## Unsplash Image Backgrounds
+
+By default, LoginThemer uses a single static background image from Unsplash:
+
+```
+image_url: https://source.unsplash.com/6ArTTluciuA/1600x900
+```
+
+You could use Unsplash to show a [random nature image][5]:
+
+```
+image_url: https://source.unsplash.com/featured/1600x900/?nature
+```
+
+Or a random image from a [premade collection][4]:
+
+```
+https://source.unsplash.com/collection/574191/1600x900
+```
+
+See [source.unsplash.com][3] for more Unsplash API tips.
+
+## Local Image as Background
+
+Finally, you may wish to just use your own background image from your Bolt theme:
+
+```
+image_url: /public/theme/myTheme/assets/images/login-background.jpg
+```
+
+## CSS Stylesheet
+
+LoginThemer lets you use a custom CSS stylesheet for the login page:
+
+```
+css_url: /theme/myTheme/css/login-theme.css
+```
 
 ## TODO
 
