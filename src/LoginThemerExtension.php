@@ -53,7 +53,7 @@ class LoginThemerExtension extends SimpleExtension
    */
   protected function getDefaultConfig() {
     return [
-      'image_url'  => 'https://source.unsplash.com/plJyhN8LdWo/1600x900',
+      'image_url'  => 'https://source.unsplash.com/6ArTTluciuA/1600x900',
       'css_url'    => ''
     ];
   }

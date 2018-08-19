@@ -3,7 +3,7 @@
     "description": "Add a custom design to the Bolt login page",
     "type": "bolt-extension",
     "keywords": ["login", "admin", "theme"],
-    "version": "0.2.4",
+    "version": "0.2.5",
     "require": {
         "bolt/bolt": "^3.5"
     },
