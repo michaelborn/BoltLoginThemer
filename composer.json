@@ -3,7 +3,7 @@
     "description": "Add a custom design to the Bolt login page",
     "type": "bolt-extension",
     "keywords": ["login", "admin", "theme"],
-    "version": "0.2.5",
+    "version": "1.0.0",
     "require": {
         "bolt/bolt": "^3.5"
     },
@@ -14,7 +14,7 @@
             "email": "mborn319@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Bolt\\Extension\\Mborn319\\LoginThemer\\": "src"
